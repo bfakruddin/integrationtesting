@@ -16,4 +16,11 @@ public class HelloControllerTest {
     void testCheck() {
         Assert.assertEquals("Check pass", helloController.check());
     }
+
+    @Test
+    void testSum(){
+        int a=10;
+        int b=20;
+        Assert.assertEquals(30, helloController.sum(a, b));
+    }
 }
